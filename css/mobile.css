@@ -1,0 +1,42 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+  .section-about {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-tab2x.jpg);
+    }
+  }
+  .hero-container {
+    max-width: 100%;
+  }
+
+  /* .clients-items {
+    flex-basis: calc((100% - 16px) / 2);
+  } */
+  /* .section-subtitle {
+    text-align: center;
+  } */
+
+  /* .section {
+    max-width: 1200;
+    display: block;
+} */
+}

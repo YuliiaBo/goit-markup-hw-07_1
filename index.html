@@ -19,11 +19,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo-link link"
             ><span class="accent">WEB</span>STUDIO</a
@@ -55,15 +58,97 @@
             </li>
           </ul>
         </address>
+
+        <!------------ mob-menu -------------->
+
+        <button type="button" class="menu-open-btn" data-menu-open></button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container">
+            <div>
+              <nav>
+                <button type="button" class="menu-close-btn" data-menu-close>
+                  <svg class="mob-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close1"></use>
+                  </svg>
+                </button>
+
+                <ul class="mob-menu-list list">
+                  <li class="mob-menu-item">
+                    <a href="./index.html" class="mob-menu-link link current"
+                      >Studio</a
+                    >
+                  </li>
+                  <li class="mob-menu-item">
+                    <a href="./porfolio.html" class="mob-menu-link link"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="mob-menu-item">
+                    <a href="#Contacts" class="mob-menu-link link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <ul class="mob-menu-address">
+                <li class="list">
+                  <a href="tel:+110001111111" class="mob-menu-contact link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="list">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob-email-contact link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">
+                    <svg class="mob-soc-icon" width="24" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">
+                    <svg class="mob-soc-icon" width="20" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">
+                    <svg class="mob-soc-icon" width="24" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
+    <!---------- main ------------>
+
     <main>
-      <section class="hero section">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
         </div>
-        <!--Открыть модальное окно-->
+
+        <!-- Открыть модальное окно -->
 
         <button type="button" class="hero-btn" data-modal-open>
           Order Service
@@ -71,8 +156,7 @@
       </section>
 
       <!--section about-->
-
-      <section class="section about">
+      <section class="section-about">
         <div class="container">
           <h2 class="visually-hidden">Feature</h2>
 
@@ -131,17 +215,35 @@
 
       <!-- section-what we are doing -->
 
-      <section class="section">
+      <section class="section-purpose">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="section-list">
             <li class="section-item-pictures list">
+              <!-- <picture> -->
+              <!-- <source srcset="" media="" /> -->
+              <!-- 
+                <source
+                  srcset="
+                    ./images/desktop-apps.webp1x,
+                    ./images/products/desktop-apps@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/products/desktop-apps.jpg    1x,
+                    ./images/products/desktop-apps@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                /> -->
               <img
                 src="./images/whatwearedoing1.jpg"
                 alt="imac desktop"
                 width="360"
                 height="300"
               />
+              <!-- </picture> -->
             </li>
             <li class="section-item-pictures list">
               <img
@@ -166,7 +268,7 @@
       <!-- section-our-team -->
 
       <section class="section-our-team">
-        <div class="container">
+        <div class="container container-mini">
           <h2 class="section-title">Our Team</h2>
           <ul class="section-list list">
             <li class="section-item">
@@ -177,7 +279,7 @@
                 height="260"
               />
               <div class="our-team-container">
-                <h3 class="section-subtitle">Mark Guerrero</h3>
+                <h3 class="section-team-subtitle">Mark Guerrero</h3>
                 <p class="section-text">Product Designer</p>
 
                 <ul class="soc-list list">
@@ -220,7 +322,7 @@
                 height="260"
               />
               <div class="our-team-container">
-                <h3 class="section-subtitle">Tom Ford</h3>
+                <h3 class="section-team-subtitle">Tom Ford</h3>
                 <p class="section-text">Frontend Developer</p>
                 <ul class="soc-list list">
                   <li class="soc-item">
@@ -262,7 +364,7 @@
                 height="260"
               />
               <div class="our-team-container">
-                <h3 class="section-subtitle">Camila Garcia</h3>
+                <h3 class="section-team-subtitle">Camila Garcia</h3>
                 <p class="section-text">Marketing</p>
                 <ul class="soc-list list">
                   <li class="soc-item">
@@ -304,7 +406,7 @@
                 height="260"
               />
               <div class="our-team-container">
-                <h3 class="section-subtitle">Daniel Wilson</h3>
+                <h3 class="section-team-subtitle">Daniel Wilson</h3>
                 <p class="section-text">UI Designer</p>
                 <ul class="soc-list list">
                   <li class="soc-item">
@@ -344,48 +446,48 @@
 
       <!-- section-clients -->
 
-      <section class="clients section">
-        <div class="container">
+      <section class="section-clients">
+        <div class="container container-mini">
           <h2 class="section-title">Customers</h2>
           <ul class="clients-list list">
             <li class="clients-items">
               <a href="" class="clients-link link">
-                <svg class="clients-icon" width="104" height="56">
+                <svg class="clients-icon" width="" height="56">
                   <use href="./images/icons.svg#icon-logo1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-items">
               <a href="" class="clients-link link"
-                ><svg class="clients-icon" width="104" height="56">
+                ><svg class="clients-icon" width="" height="56">
                   <use href="./images/icons.svg#icon-logo2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-items">
               <a href="" class="clients-link link">
-                <svg class="clients-icon" width="104" height="56">
+                <svg class="clients-icon" width="" height="56">
                   <use href="./images/icons.svg#icon-logo3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-items">
               <a href="" class="clients-link link"
-                ><svg class="clients-icon" width="104" height="56">
+                ><svg class="clients-icon" width="" height="56">
                   <use href="./images/icons.svg#icon-logo4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-items">
               <a href="" class="clients-link link"
-                ><svg class="clients-icon" width="104" height="56">
+                ><svg class="clients-icon" width="" height="56">
                   <use href="./images/icons.svg#icon-logo5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-items">
               <a href="" class="clients-link link"
-                ><svg class="clients-icon" width="104" height="56">
+                ><svg class="clients-icon" width="" height="56">
                   <use href="./images/icons.svg#icon-logo6"></use>
                 </svg>
               </a>
@@ -394,9 +496,9 @@
         </div>
       </section>
     </main>
-
+    
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container footer-container container-mini">
         <div class="footer-logo-section">
           <a href="./index.html" class="footer-logo-link link"
             ><span class="accent">WEB</span>STUDIO</a
@@ -462,7 +564,7 @@
     </footer>
 
     <!--Подключить модальное окно-->
-
+    <!-- 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close type="button">
@@ -524,8 +626,9 @@
 
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
