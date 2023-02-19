@@ -27,16 +27,4 @@
   .hero-container {
     max-width: 100%;
   }
-
-  /* .clients-items {
-    flex-basis: calc((100% - 16px) / 2);
-  } */
-  /* .section-subtitle {
-    text-align: center;
-  } */
-
-  /* .section {
-    max-width: 1200;
-    display: block;
-} */
 }
