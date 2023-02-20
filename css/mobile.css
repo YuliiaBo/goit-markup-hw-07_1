@@ -2,10 +2,7 @@
   .container {
     max-width: 428px;
   }
-  .section-about {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
+
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),

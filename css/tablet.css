@@ -2,9 +2,9 @@
   .container {
     max-width: 768px;
   }
-  .container.container-mini {
+  /* .container.container-mini {
     width: 560px;
-  }
+  } */
   .logo-link {
     margin-right: 123px;
     padding-top: 24px;
@@ -47,9 +47,11 @@
     align-items: center;
   }
   .contact {
+    font-weight: 400;
     font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     color: var(--second-colour);
 
     transition-property: color;
@@ -89,51 +91,76 @@
     min-width: 496px;
     margin-bottom: 40px;
   }
-  .section-about {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
+
   .section-our-team {
     padding-top: 96px;
     padding-bottom: 104px;
   }
-  .section-clients {
-    padding-top: 96px;
-    padding-bottom: 96px;
+  .section-text-ourteam {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
   }
+
   .section-subtitle {
-    text-align: left;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: start;
   }
+  .section-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: start;
+  }
+
   .section-list {
     gap: 72px 24px;
   }
-  .section-item {
+  .section-item-about {
     flex-basis: calc((100% - 24px) / 2);
+  }
+  .section-item {
+    width: 264px;
+    flex-basis: calc((100% - 210px) / 2);
   }
   .clients-list {
     gap: 72px 24px;
   }
   .clients-items {
-    width: 168px;
-    flex-basis: calc((100% - 48px) / 3);
+    /* width: 168px; */
+    flex-basis: calc((100% - 234px) / 3);
   }
   /* footer */
 
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 24px;
     align-items: flex-start;
+    gap: 0px;
+    justify-content: start;
   }
-
+  .footer-logo-section {
+    margin-left: 108px;
+    margin-bottom: 72px;
+    justify-content: start;
+  }
   .footer-subtitle {
     width: 264px;
   }
-
   .footer-soc {
     margin-bottom: 0;
   }
-
+  .footer-section {
+    text-align: start;
+  }
+  .footer-soc-icons {
+    margin-bottom: 0;
+    margin-left: 24px;
+  }
   .subscribe-form {
     width: 100%;
     align-items: start;
@@ -144,13 +171,18 @@
     margin-bottom: 0px;
     margin-right: 24px;
   }
+  .online-form {
+    margin-left: 108px;
+    flex-basis: calc((100% - 80px) / 2);
+  }
+
   .footer-online {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    gap: 24px;
+    gap: 0;
   }
   .online-form-input {
     background-color: transparent;
