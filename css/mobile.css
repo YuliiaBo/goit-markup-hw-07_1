@@ -25,3 +25,20 @@
     max-width: 100%;
   }
 }
+/* @media screen and (min-width: 408px) {
+  .modal {
+    max-width: 408px;
+    padding-right: 24px;
+    padding-left: 24px;
+  } */
+
+@media screen and (max-width: 427px) {
+  .mob-menu-contact-link {
+    font-weight: 600;
+    font-size: calc(100vw * 0.075);
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: var(--btn-background-colour);
+    transition: color var(--btn-background-active);
+  }
+}

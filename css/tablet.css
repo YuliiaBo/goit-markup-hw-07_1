@@ -65,6 +65,9 @@
     display: none;
     margin-right: auto;
   }
+  .mob-menu {
+    display: none;
+  }
 
   .hero {
     padding-top: 112px;
@@ -166,11 +169,6 @@
     align-items: start;
   }
 
-  .modal-input-online {
-    width: 264px;
-    margin-bottom: 0px;
-    margin-right: 24px;
-  }
   .online-form {
     margin-left: 108px;
     flex-basis: calc((100% - 80px) / 2);
@@ -195,6 +193,11 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-background-colour);
+  }
+  .modal {
+    max-width: 408px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
   .modal-input-online {
     width: 264px;
