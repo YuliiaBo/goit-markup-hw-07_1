@@ -63,6 +63,7 @@ img {
 }
 
 .container {
+  max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -174,9 +175,10 @@ img {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+  padding: 25px;
+  
   max-width: 428px;
   position: relative;
-
 }
 
 .mob-menu {
@@ -186,11 +188,13 @@ img {
   background-color: #ffffff;
   top: 0;
   z-index: 1;
-  padding: 40px;
-  max-width: 428px;
+  /* max-width: 428px; */
+  left: 0;
+
 }
 .mob-menu-list {
   margin-bottom: 284px;
+  margin-top: 40px;
 }
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
@@ -212,8 +216,8 @@ img {
 }
 .mob-menu-contact {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 0.8;
+  font-size: 21px;
+  line-height: 1.9;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--btn-background-colour);
@@ -305,6 +309,7 @@ img {
   max-width: 100%;
 }
 .hero-title {
+  width: 320px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -776,7 +781,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  max-width: 392px;
   min-height: 584px;
 
   transform: translate(-50%, -50%);

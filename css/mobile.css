@@ -1,8 +1,4 @@
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 428px;
-  }
-
+@media screen and (min-width: 428px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -24,7 +20,27 @@
   .hero-container {
     max-width: 100%;
   }
+  .modal {
+    width: 392px;
+  }
+  .mob-menu {
+    width: 100%;
+    max-width: 100%;
+  }
+  .mob-menu-list {
+    max-width: 354px;
+  }
+  .mob-menu-contact {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.9;
+    max-width: 354px;
+  }
+  .mob-soc-list {
+    max-width: 354px;
+  }
 }
+
 /* @media screen and (min-width: 408px) {
   .modal {
     max-width: 408px;
@@ -32,7 +48,7 @@
     padding-left: 24px;
   } */
 
-@media screen and (max-width: 427px) {
+/* @media screen and (max-width: 427px) {
   .mob-menu-contact-link {
     font-weight: 600;
     font-size: calc(100vw * 0.075);
@@ -41,4 +57,4 @@
     color: var(--btn-background-colour);
     transition: color var(--btn-background-active);
   }
-}
+  */
